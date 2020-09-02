@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,EAAE,CAAA;EACA,KAAK,EAAE,GAAG;CACX",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/_font.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
