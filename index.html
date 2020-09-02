@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./css/main.css">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
@@ -17,6 +18,9 @@
 </head>
 <body>
 <!-- 
+
+
+
 
   Social Media Dashboard
   Total Followers: 23,004
@@ -81,14 +85,295 @@
   1407
   12%  
 -->
-  <div class="container">
-    <div class="head">
-      <h1>Social Media Dashboard</h1>
+  
+
+
+<!--MAIN-->
+
+<div class="container">
+  <div class="row ">
+   <div class="col">
+
+     <div class="head">
+       <h1 class="head-main">Social Media Dashboard</h1>
+       <p class="head-para">Total Followers : 23,000</p>
+     </div>
+   </div>
+  <div class="switch mt-5 mr-3">
+    <div class="custom-control custom-switch">
+      <span  class="mr-5" >Dark Mode</span>
+      <input type="checkbox" class="custom-control-input switch-color" id="customSwitches">
+      <label class="custom-control-label switch-color" for="customSwitches"></label>
+    </div>
+
+  </div>
+  </div>
+    <div class="row">
+
+<!--FACEBOOK-->
+      <div class="col-lg  flip flip-facebook">
+
+       <div class="row">
+         <div class="col m-3 text-center">
+           <div class="social">
+             <img src="./images/icon-facebook.svg" alt="">
+             <span>@slicecode</span>
+
+           </div>
+
+            <h1 class="number">1987</h1>
+            <span class="followers">Followers</span >
+
+            <div class="live">
+           <img   src="./images/icon-up.svg" alt="">
+           <span class="live-increase">12 Today</span>
+            </div>
+         </div>
+       </div>
+      </div>
+
+
+<!--Twitter-->
+
+      <div class="col-lg flip flip-twitter">
+        <div class="row">
+          <div class="col m-3 text-center">
+            <div class="social">
+              <img src="./images/icon-twitter.svg" alt="">
+              <span>@slicecode</span>
+ 
+            </div>
+ 
+             <h1 class="number">1987</h1>
+             <span class="followers">Followers</span >
+ 
+             <div class="live">
+            <img   src="./images/icon-up.svg" alt="">
+            <span class="live-increase">99 Today</span>
+             </div>
+          </div>
+        </div>
+      </div>
+
+<!--INSTAGRAM-->
+      <div class="col-lg flip flip-instagram">
+        <div class="row">
+          <div class="col m-3 text-center">
+            <div class="social">
+              <img src="./images/icon-instagram.svg" alt="">
+              <span>@slicecode</span>
+ 
+            </div>
+ 
+             <h1 class="number">11K</h1>
+             <span class="followers">Followers</span >
+ 
+             <div class="live">
+            <img   src="./images/icon-up.svg" alt="">
+            <span class="live-increase">1099 Today</span>
+             </div>
+          </div>
+        </div>
+      </div>
+
+   <!--YOUTUBE-->
+       <div class="col-lg flip flip-youtube">
+        <div class="row">
+          <div class="col m-3 text-center">
+            <div class="social">
+              <img src="./images/icon-youtube.svg" alt="">
+              <span>@slicecode</span>
+ 
+            </div>
+ 
+             <h1 class="number">1987</h1>
+             <span class="followers">Followers</span >
+ 
+             <div class="live">
+            <img   src="./images/icon-down.svg" alt="">
+            <span class="live-decrease">144 Today</span>
+             </div>
+          </div>
+        </div>
+        </div>
+
+
+        <!--------------------BOTTOM----------------------------------->
+    
+    
+        <div class="container">
+        <h2 class="over">Overview - Today</h2>
+        <div class="row">
+
+          <div class="col flip-mini">
+            <div class=" mini-card-1">
+
+              <p class="mini-card-1-para">Page Views</p>
+              <img class="mini-card-1-img" src="./images/icon-facebook.svg" alt="">
+            </div>
+
+            <div class="mini-card-2">
+
+              <h1 class="number-mini" >87</h1>
+              <div class="mini-card">
+
+                <img class="live" src="./images/icon-up.svg" alt="">
+                <span class="live-increase" >3%</span>
+              </div>
+            </div>
+          </div>
+  
+
+
+
+          <div class="col-md flip-mini">
+            <div class=" mini-card-1">
+
+              <p class="mini-card-1-para">Likes</p>
+              <img class="mini-card-1-img" src="./images/icon-facebook.svg" alt="">
+            </div>
+
+            <div class="mini-card-2">
+
+              <h1 class="number-mini" >52</h1>
+              <div class="mini-card">
+
+                <img class="live" src="./images/icon-down.svg" alt="">
+                <span class="live-decrease" >2%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md flip-mini">
+            <div class=" mini-card-1">
+
+              <p class="mini-card-1-para">Likes</p>
+              <img class="mini-card-1-img" src="./images/icon-instagram.svg" alt="">
+            </div>
+
+            <div class="mini-card-2">
+
+              <h1 class="number-mini" >5462</h1>
+              <div class="mini-card">
+
+                <img class="live" src="./images/icon-up.svg" alt="">
+                <span class="live-increase" >2257%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md flip-mini">
+            <div class=" mini-card-1">
+
+              <p class="mini-card-1-para">Profile Views</p>
+              <img class="mini-card-1-img" src="./images/icon-instagram.svg" alt="">
+            </div>
+
+            <div class="mini-card-2">
+
+              <h1 class="number-mini" >1375</h1>
+              <div class="mini-card">
+
+                <img class="live" src="./images/icon-up.svg" alt="">
+                <span class="live-increase" >52k</span>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md flip-mini">
+          <div class=" mini-card-1">
+
+            <p class="mini-card-1-para">Retweets</p>
+            <img class="mini-card-1-img" src="./images/icon-twitter.svg" alt="">
+          </div>
+
+          <div class="mini-card-2">
+
+            <h1 class="number-mini" >117</h1>
+            <div class="mini-card">
+
+              <img class="live" src="./images/icon-up.svg" alt="">
+              <span class="live-increase" >303%</span>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-md flip-mini">
+          <div class=" mini-card-1">
+
+            <p class="mini-card-1-para">Likes</p>
+            <img class="mini-card-1-img" src="./images/icon-twitter.svg" alt="">
+          </div>
+
+          <div class="mini-card-2">
+
+            <h1 class="number-mini" >507</h1>
+            <div class="mini-card">
+
+              <img class="live" src="./images/icon-up.svg" alt="">
+              <span class="live-increase" >553%</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md flip-mini">
+          <div class=" mini-card-1">
+
+            <p class="mini-card-1-para">Likes</p>
+            <img class="mini-card-1-img" src="./images/icon-youtube.svg" alt="">
+          </div>
+
+          <div class="mini-card-2">
+
+            <h1 class="number-mini" >87</h1>
+            <div class="mini-card">
+
+              <img class="live" src="./images/icon-down.svg" alt="">
+              <span class="live-decrease" >19%</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md flip-mini">
+          <div class=" mini-card-1">
+
+            <p class="mini-card-1-para">Total Views</p>
+            <img class="mini-card-1-img" src="./images/icon-youtube.svg" alt="">
+          </div>
+
+          <div class="mini-card-2">
+
+            <h1 class="number-mini" >1407</h1>
+            <div class="mini-card">
+
+              <img class="live" src="./images/icon-up.svg" alt="">
+              <span class="live-decrease" >12%</span>
+            </div>
+          </div>
+        </div>
+    </div>
+      </div>
+
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">webdiego  - diego massarini - https://diego-slicecode.dev/ </a>.
   </div>
 </body>
 </html>

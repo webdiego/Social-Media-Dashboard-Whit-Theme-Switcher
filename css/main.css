@@ -1,4 +1,150 @@
-h1 {
-  color: red;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 65,2%;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-image: url(../images/bg-ligth.png);
+}
+
+p {
+  margin: 0;
+}
+
+.flip {
+  background-color: #f0f2fa;
+  margin: 1rem;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.flip-mini {
+  background-color: #f0f2fa;
+  margin: 1rem;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.flip-mini:hover {
+  cursor: pointer;
+  background-color: #e6e8ef;
+}
+
+.flip:hover {
+  cursor: pointer;
+  background-color: #e6e8ef;
+}
+
+.flip-facebook {
+  border-top: 4px solid #198ff5;
+}
+
+.flip-twitter {
+  border-top: 4px solid #1ca0f2;
+}
+
+.flip-instagram {
+  border-top: 4px solid;
+  border-image: linear-gradient(to left, #fdc468 1%, #df4996 100%);
+  border-image-slice: 1;
+  border-radius: 5px;
+}
+
+.flip-youtube {
+  border-top: 4px solid #c4032a;
+}
+
+.social {
+  margin: 1rem 0;
+}
+
+.number {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.followers {
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #63687e;
+  letter-spacing: .3rem;
+  font-size: .8rem;
+}
+
+.live {
+  margin: 1rem 0;
+}
+
+.live-increase {
+  color: #1db489;
+  font-weight: bold;
+}
+
+.live-decrease {
+  color: #dc414c;
+  font-weight: bold;
+}
+
+.mini-card-1 {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mini-card-1-img {
+  height: 1.5rem;
+}
+
+.mini-card-1-para {
+  font-weight: bold;
+  color: #63687e;
+}
+
+.mini-card-2 {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.number-mini {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.head {
+  margin: 1.8rem 0;
+}
+
+.head-main {
+  font-weight: bold;
+  margin: 0;
+}
+
+.head-para {
+  color: #63687e;
+  font-weight: bold;
+}
+
+.switch-color {
+  background-color: red;
+}
+
+.over {
+  font-weight: bold;
+  color: #63687e;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

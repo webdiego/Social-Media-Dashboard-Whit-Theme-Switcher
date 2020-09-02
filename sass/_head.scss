@@ -1,0 +1,21 @@
+.head{
+  margin: 1.8rem 0;
+  &-main{
+   font-weight: bold;
+   margin: 0;
+  }
+
+  &-para{
+    color: $DarkGrayishBlue;
+    font-weight: bold;
+  }
+}
+.switch-color{
+  background-color: red;
+}
+
+.over{
+  font-weight: bold;
+  color: $DarkGrayishBlue;
+  margin: 0;
+}

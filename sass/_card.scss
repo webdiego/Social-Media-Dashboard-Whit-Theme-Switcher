@@ -1,0 +1,113 @@
+.flip{
+  background-color: $LightCard;
+  margin: 1rem;
+  border-radius: 5px;
+  height: 100%;
+
+  &-mini{
+    background-color: $LightCard;
+  margin: 1rem;
+  
+  border-radius: 5px;
+  height: 100%;
+
+  
+  &:hover{
+    cursor: pointer;
+    background-color:$LightCardHover;
+  }
+  }
+
+  &:hover{
+    cursor: pointer;
+    background-color:$LightCardHover;
+  }
+
+
+  &-facebook{
+    border-top: 4px solid $Facebook;
+
+  }
+  &-twitter{
+    border-top: 4px solid $Twitter;
+
+  }
+  &-instagram{
+   
+  border-top: 4px solid;
+  border-image: linear-gradient(to left, hsl(37, 97%, 70%) 1%, hsl(329, 70%, 58%) 100%);
+  border-image-slice: 1;
+  border-radius: 5px;
+
+
+  }
+  &-youtube{
+    border-top: 4px solid $Youtube;
+
+  }
+}
+
+
+.social{
+  margin:  1rem 0;
+}
+.number{
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+.followers{
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: $DarkGrayishBlue;
+  letter-spacing: .3rem;
+  font-size: .8rem;
+}
+
+.live{
+  margin:  1rem 0;
+  &-increase{
+    color: $LimeGreen;
+    font-weight: bold;
+  }
+  &-decrease{
+    color: $BrightRed;
+    font-weight: bold;
+  }
+}
+
+.mini-card{
+  
+  &-1{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    &-img{
+      height: 1.5rem;
+    }
+    &-para{
+      font-weight: bold;
+      color: $DarkGrayishBlue;
+    }
+  }
+
+  &-2{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-between;
+    
+    margin: 1rem;
+
+   
+  }
+}
+.number-mini{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
