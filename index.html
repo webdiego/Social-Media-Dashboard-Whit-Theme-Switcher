@@ -305,6 +305,7 @@ checkbox.addEventListener('change', function() {
 
         const span = document.querySelector('.light')
         span.innerText = 'Dark Mode'
+        span.setAttribute('style', 'color:white')
 
         const bg = document.querySelector('body')
         bg.setAttribute('style', 'background-image: url(./images/bg-dark.png);')
@@ -313,6 +314,7 @@ checkbox.addEventListener('change', function() {
         document.documentElement.setAttribute('data-theme', 'light')
         const span = document.querySelector('.light')
         span.innerText = 'Light Mode'
+        span.setAttribute('style', 'color:black')
         const bg = document.querySelector('body')
         bg.setAttribute('style', 'background-image: url(./images/bg-light.png);')
     }
