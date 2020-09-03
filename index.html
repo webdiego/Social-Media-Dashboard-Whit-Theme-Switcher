@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -10,101 +10,29 @@
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-<!-- 
+<body style="background-image: url(./images/bg-ligth.png);">
 
-
-
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%  
--->
-  
-
-
-<!--MAIN-->
 
 <div class="container">
   <div class="row ">
    <div class="col">
 
      <div class="head">
-       <h1 class="head-main">Social Media Dashboard</h1>
+       <h1 class="head-main twi">Social Media Dashboard</h1>
        <p class="head-para">Total Followers : 23,000</p>
      </div>
    </div>
   <div class="switch mt-5 mr-3">
-    <div class="custom-control custom-switch">
-      <span  class="mr-5" >Dark Mode</span>
-      <input type="checkbox" class="custom-control-input switch-color" id="customSwitches">
-      <label class="custom-control-label switch-color" for="customSwitches"></label>
-    </div>
+    <div class="toggle-container">
+      <span class="light">Light Mode</span>
+      <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+      
+  </div>
 
   </div>
   </div>
@@ -117,7 +45,7 @@
          <div class="col m-3 text-center">
            <div class="social">
              <img src="./images/icon-facebook.svg" alt="">
-             <span>@slicecode</span>
+             <span class="twi">@slicecode</span>
 
            </div>
 
@@ -140,7 +68,7 @@
           <div class="col m-3 text-center">
             <div class="social">
               <img src="./images/icon-twitter.svg" alt="">
-              <span>@slicecode</span>
+              <span class="twi">@slicecode</span>
  
             </div>
  
@@ -161,7 +89,7 @@
           <div class="col m-3 text-center">
             <div class="social">
               <img src="./images/icon-instagram.svg" alt="">
-              <span>@slicecode</span>
+              <span class="twi">@slicecode</span>
  
             </div>
  
@@ -182,7 +110,7 @@
           <div class="col m-3 text-center">
             <div class="social">
               <img src="./images/icon-youtube.svg" alt="">
-              <span>@slicecode</span>
+              <span class="twi">@slicecode</span>
  
             </div>
  
@@ -362,18 +290,42 @@
   </div>
 
 
-
-
-
-
-
-
-
-
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">webdiego  - diego massarini - https://diego-slicecode.dev/ </a>.
   </div>
+
+ <script>
+           const checkbox = document.querySelector('input[name=theme]');
+
+checkbox.addEventListener('change', function() {
+    if(this.checked) {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'dark')
+
+        const span = document.querySelector('.light')
+        span.innerText = 'Dark Mode'
+
+        const bg = document.querySelector('body')
+        bg.setAttribute('style', 'background-image: url(./images/bg-dark.png);')
+    } else {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'light')
+        const span = document.querySelector('.light')
+        span.innerText = 'Light Mode'
+        const bg = document.querySelector('body')
+        bg.setAttribute('style', 'background-image: url(./images/bg-light.png);')
+    }
+})
+
+let trans = () => {
+    document.documentElement.classList.add('transition');
+    window.setTimeout(() => {
+        document.documentElement.classList.remove('transition')
+    }, 1000)
+}
+
+
+ </script>
 </body>
 </html>

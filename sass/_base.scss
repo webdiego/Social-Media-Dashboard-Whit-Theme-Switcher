@@ -1,3 +1,30 @@
+html{
+
+--Card : hsl(227, 47%, 96%);
+--CardHover : hsl(227, 21%, 92%);
+--para: hsl(228, 12%, 44%);
+--text : hsl(230, 17%, 14%);
+
+}
+
+html[data-theme='dark'] {
+ 
+--Card: hsl(228, 28%, 20%);
+--CardHover : hsl(229, 26%, 28%);
+--para: hsl(228, 34%, 66%) ;//text;
+--text: hsl(0, 0%, 100%); //text
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+
+
 *{
   padding: 0;
   margin: 0;
@@ -28,32 +55,12 @@ $ToggleDark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);;
 
 $ToggleLight: hsl(230, 22%, 74%);
 
-//Neutral
-
-//Dark Theme
-
-
-$VeryDarkBlue: hsl(232, 19%, 15%);
-$DarkBlue: hsl(228, 28%, 20%);
-$DesaturatedBlue: hsl(228, 34%, 66%) ;//text;
-$White: hsl(0, 0%, 100%); //text
-
-//Light Theme
-
-$White: hsl(0, 0%, 100%);
-$VeryPaleBlue : hsl(225, 100%, 98%);
-$LightCard : hsl(227, 47%, 96%);
-$LightCardHover : hsl(227, 21%, 92%);
-$DarkGrayishBlue: hsl(228, 12%, 44%);
-$VeryDarkBlue : hsl(230, 17%, 14%);
 
 
 
 
 
-body{
-  background-image: url(../images/bg-ligth.png);
-}
+
 p{
   margin: 0;
 }

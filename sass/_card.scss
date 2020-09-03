@@ -1,11 +1,11 @@
 .flip{
-  background-color: $LightCard;
+  background-color: var(--Card);
   margin: 1rem;
   border-radius: 5px;
   height: 100%;
 
   &-mini{
-    background-color: $LightCard;
+    background-color:var(--Card);
   margin: 1rem;
   
   border-radius: 5px;
@@ -14,13 +14,13 @@
   
   &:hover{
     cursor: pointer;
-    background-color:$LightCardHover;
+    background-color:var(--CardHover);
   }
   }
 
   &:hover{
     cursor: pointer;
-    background-color:$LightCardHover;
+    background-color:var(--CardHover);
   }
 
 
@@ -46,20 +46,24 @@
 
   }
 }
-
+.twi{
+ color: var(--text);
+}
 
 .social{
   margin:  1rem 0;
 }
 .number{
   font-size: 4rem;
+  color: var(--text);
   font-weight: bold;
   margin: 0;
+  
 }
 .followers{
   text-transform: uppercase;
   font-weight: lighter;
-  color: $DarkGrayishBlue;
+  color: var(--para);
   letter-spacing: .3rem;
   font-size: .8rem;
 }
@@ -92,7 +96,7 @@
     }
     &-para{
       font-weight: bold;
-      color: $DarkGrayishBlue;
+      color: var(--para);
     }
   }
 
@@ -110,4 +114,5 @@
 .number-mini{
   font-size: 1.5rem;
   font-weight: bold;
+  color: var(--text);
 }

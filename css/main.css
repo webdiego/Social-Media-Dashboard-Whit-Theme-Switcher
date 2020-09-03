@@ -1,3 +1,87 @@
+.head {
+  margin: 1.8rem 0;
+}
+
+.head-main {
+  font-weight: bold;
+  margin: 0;
+}
+
+.head-para {
+  color: var(--para);
+  font-weight: bold;
+}
+
+.over {
+  font-weight: bold;
+  color: var(--para);
+  margin: 0;
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: grey;
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fafafa;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: linear-gradient(#378FE6, #3EDA82);
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 45px;
+}
+
+html {
+  --Card: hsl(227, 47%, 96%);
+  --CardHover: hsl(227, 21%, 92%);
+  --para: hsl(228, 12%, 44%);
+  --text: hsl(230, 17%, 14%);
+}
+
+html[data-theme='dark'] {
+  --Card: hsl(228, 28%, 20%);
+  --CardHover: hsl(229, 26%, 28%);
+  --para: hsl(228, 34%, 66%) ;
+  --text: hsl(0, 0%, 100%);
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,23 +93,19 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-body {
-  background-image: url(../images/bg-ligth.png);
-}
-
 p {
   margin: 0;
 }
 
 .flip {
-  background-color: #f0f2fa;
+  background-color: var(--Card);
   margin: 1rem;
   border-radius: 5px;
   height: 100%;
 }
 
 .flip-mini {
-  background-color: #f0f2fa;
+  background-color: var(--Card);
   margin: 1rem;
   border-radius: 5px;
   height: 100%;
@@ -33,12 +113,12 @@ p {
 
 .flip-mini:hover {
   cursor: pointer;
-  background-color: #e6e8ef;
+  background-color: var(--CardHover);
 }
 
 .flip:hover {
   cursor: pointer;
-  background-color: #e6e8ef;
+  background-color: var(--CardHover);
 }
 
 .flip-facebook {
@@ -60,12 +140,17 @@ p {
   border-top: 4px solid #c4032a;
 }
 
+.twi {
+  color: var(--text);
+}
+
 .social {
   margin: 1rem 0;
 }
 
 .number {
   font-size: 4rem;
+  color: var(--text);
   font-weight: bold;
   margin: 0;
 }
@@ -73,7 +158,7 @@ p {
 .followers {
   text-transform: uppercase;
   font-weight: lighter;
-  color: #63687e;
+  color: var(--para);
   letter-spacing: .3rem;
   font-size: .8rem;
 }
@@ -108,7 +193,7 @@ p {
 
 .mini-card-1-para {
   font-weight: bold;
-  color: #63687e;
+  color: var(--para);
 }
 
 .mini-card-2 {
@@ -122,29 +207,6 @@ p {
 .number-mini {
   font-size: 1.5rem;
   font-weight: bold;
-}
-
-.head {
-  margin: 1.8rem 0;
-}
-
-.head-main {
-  font-weight: bold;
-  margin: 0;
-}
-
-.head-para {
-  color: #63687e;
-  font-weight: bold;
-}
-
-.switch-color {
-  background-color: red;
-}
-
-.over {
-  font-weight: bold;
-  color: #63687e;
-  margin: 0;
+  color: var(--text);
 }
 /*# sourceMappingURL=main.css.map */
